@@ -1,0 +1,29 @@
+package vojj;
+import java.util.*;
+class vojjala{  
+public static void main(String args[])
+{		Scanner sc= new Scanner(System.in);  
+		System.out.println("Enter F-C or F-K or C-F or C-K or K-F or K-C");
+		String str= sc.nextLine(); 
+		System.out.println("Enter Value:-");
+		int f= sc.nextInt();
+		double m;
+		if(str.equals("F-C")){
+			m=((f-32)*5)/9;
+			System.out.println("C->"+m);}
+		else if(str.equals("F-K")){
+			m=((f-32)/ 1.8)+273;
+			System.out.println("K->"+m);}
+		else if(str.equals("C-F")){
+			m=((f*9)/5)+32;
+			System.out.println("F->"+m);}
+		else if(str.equals("C-K")){
+			m=f+273.15;
+			System.out.println("K->"+m);}
+		else if(str.equals("K-F")){
+			m=f*1.8-459.67;
+			System.out.println("F->"+m);}
+		else {
+			m=f+273.15;
+			System.out.println("C->"+m);
+} } }
